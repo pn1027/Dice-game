@@ -1,0 +1,141 @@
+body {
+  background-color: brown;
+  background-image: url(images/dice.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the top of the viewport */
+  text-align: center;
+}
+
+.title-container {
+  margin-top: 60px;
+}
+
+.title {
+  font-family: Rockwell Extra Bold,Rockwell Bold,monospace; 
+  font-size: 36px;
+  margin-top: 20px;
+  color:purple; /* Set the font color to pink */
+  text-shadow: 2px 2px 10px rgba(255, 0, 255, 0.5); /* Add a pink glow effect */
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.player {
+  text-align: center;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.batman,.superman {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player-name {
+  font-size: 18px;
+  margin-top: 0px; /* Adjust the margin to position the text below the avatar */
+}
+
+
+.img1,.img2 {
+  width: 100px;
+  height: 100px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.victory{
+  font-family: "impact", sans-serif; /* Replace "VictoryFont" with the actual font name you want to use */
+  font-size: 30px; /* Adjust the font size as needed */
+  color: #FFD700; /* Adjust the color to your preference (gold color) */
+  font-style: oblique;
+}
+
+h3{
+  font-size: 15px;
+  font-style: italic;
+  color: blueviolet;
+
+}
+
+
+
+
+
+
+/* victory gif */
+#batwinImage {
+  position: fixed;
+  left: 4%;
+  top: 28%;
+  width: 20%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 999; /* Ensure it's on top of everything */
+  display: none; /* Initially hidden */
+}
+
+#SuperwinImage {
+  position: fixed;
+  left:77%;
+  top: 25%;
+  width: 20%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 999; /* Ensure it's on top of everything */
+  display: none; /* Initially hidden */
+}
+
+#movingImage {
+  position: absolute;
+  left: 15%;
+  width: 20%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 999; /* Ensure it's on top of everything */
+  display: none; /* Initially hidden */
+  top: 0;
+  transform: translateX(-50%); /* Center the image horizontally */
+  animation: moveImage 5s linear  infinite; /* Adjust the animation duration as needed */
+}
+
+#movingImage2 {
+  position: absolute;
+  left:85%;
+  width: 20%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 999; /* Ensure it's on top of everything */
+  display: none; /* Initially hidden */
+  top: 0;
+  transform: translateX(-50%); /* Center the image horizontally */
+  animation: moveImage 5s linear  infinite; /* Adjust the animation duration as needed */
+}
+
+
+@keyframes moveImage {
+  0%, 100% {
+    top: 0; /* Start and end at the top */
+  }
+  50% {
+    top: 70%; /* Move to the bottom halfway through the animation */
+  }
+}
+

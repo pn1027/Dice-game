@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dice</title>
+</head>
+<body class="body">
+
+    <img id="batwinImage" class="winner-image" src="" alt="Winner Image Player 1">
+    <img id="SuperwinImage" class="winner-image" src="" alt="Winner Image Player 2">
+    <img id="movingImage" class="moving-image" src="images/joker.jpg" alt="Moving Image">
+    <img id="movingImage2" class="moving-image" src="images/joker.jpg" alt="Moving Image">
+
+
+    <!-- <img id="winnerImage2" class="winner-image" src="" alt="Winner Image Player 2"> -->
+
+    <div class="title-container"> <h1 class="title">Dice game</h1> </div>
+
+    <div class="container">
+        <div class="player">
+            <div class="avatar">
+                <img class="batman" src="images/batmanpfp.jpg">
+            </div>
+            <h3 class="player-name">Player 1</h3>
+            <img class="img1" src="images/dice1.png">
+            <h3 id="diceA"> </h3>
+        </div>
+        
+        <div class="player">
+            <div class="avatar">
+                <img class="superman" src="images/supermanpfp.jpg">
+            </div>
+            <h3 class="player-name">Player 2</h3>
+            <img class="img2" src="images/dice2.png">
+            <h3 id="diceB"> </h3>
+        </div>
+    </div>
+
+    <h2 class="victory" id="result"></h2>
+    <script src="script.js"></script>
+</body>
+</html>
