@@ -1,6 +1,6 @@
 body {
-  background-color: brown;
-  background-image: url(images/dice.webp);
+  background-color: peru;
+  background-image: url(images/background2.gif);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -74,12 +74,9 @@ body {
 
 h3{
   font-size: 15px;
-  font-style: italic;
+
   color: blueviolet;
-
 }
-
-
 
 
 
@@ -95,10 +92,30 @@ h3{
   display: none; /* Initially hidden */
 }
 
+#batwinImage2 {
+  position: fixed;
+  left: 4%;
+  top: 40%;
+  width: 20%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 999; /* Ensure it's on top of everything */
+  display: none; /* Initially hidden */
+}
+
 #SuperwinImage {
   position: fixed;
   left:77%;
   top: 25%;
+  width: 20%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 999; /* Ensure it's on top of everything */
+  display: none; /* Initially hidden */
+}
+
+#SuperwinImage2 {
+  position: fixed;
+  left:77%;
+  top: 40%;
   width: 20%; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
   z-index: 999; /* Ensure it's on top of everything */
@@ -120,10 +137,10 @@ h3{
 #movingImage2 {
   position: absolute;
   left:85%;
-  width: 20%; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  z-index: 999; /* Ensure it's on top of everything */
-  display: none; /* Initially hidden */
+  width: 20%; 
+  height: auto; 
+  z-index: 999; 
+  display: none; 
   top: 0;
   transform: translateX(-50%); /* Center the image horizontally */
   animation: moveImage 5s linear  infinite; /* Adjust the animation duration as needed */
@@ -132,10 +149,10 @@ h3{
 
 @keyframes moveImage {
   0%, 100% {
-    top: 0; /* Start and end at the top */
+    top: 0; 
   }
   50% {
-    top: 70%; /* Move to the bottom halfway through the animation */
+    top: 70%; 
   }
 }
 

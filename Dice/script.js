@@ -15,19 +15,23 @@ document.querySelector(".img2").src = diceImages[d2-1];
 
 function winner(){
 if(d1>d2){
+    document.getElementById("SuperwinImage2").src = "images/supermansad.gif"; // Set the image source
+    document.getElementById("SuperwinImage2").style.display = "block";
     document.getElementById("batwinImage").src = "images/batwin2.gif"; // Set the image source
     document.getElementById("batwinImage").style.display = "block";
     return ("Player 1 has won");
 }
 else if (d2>d1){
+    document.getElementById("batwinImage2").src = "images/batmansad.gif"; // Set the image source
+    document.getElementById("batwinImage2").style.display = "block";
     document.getElementById("SuperwinImage").src = "images/superwin.gif"; // Set the image source
     document.getElementById("SuperwinImage").style.display = "block";
     return ("Player 2 has won");
 }
 else 
-document.getElementById("movingImage").src = "images/joker.jpg"; // Set the image source
+document.getElementById("movingImage").src = "images/rematch.gif"; // Set the image source
 document.getElementById("movingImage").style.display = "block";
-document.getElementById("movingImage2").src = "images/joker.jpg"; // Set the image source
+document.getElementById("movingImage2").src = "images/rematch.gif"; // Set the image source
 document.getElementById("movingImage2").style.display = "block";
 return ("🥊Do a Re-match🥊");}
 
