@@ -70,6 +70,7 @@ body {
   font-size: 30px; /* Adjust the font size as needed */
   color: #FFD700; /* Adjust the color to your preference (gold color) */
   font-style: oblique;
+  margin-bottom: 0%;
 }
 
 h3{
@@ -156,3 +157,25 @@ h3{
   }
 }
 
+/* button */
+#throwDiceButton {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 15px;
+  background: #7334d9;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#throwDiceButton:hover {
+  background: #3c3cfc;
+  background-image: -webkit-linear-gradient(top, #3c3cfc, #7e34d9);
+  background-image: -moz-linear-gradient(top, #3c3cfc, #7e34d9);
+  background-image: -ms-linear-gradient(top, #3c3cfc, #7e34d9);
+  background-image: -o-linear-gradient(top, #3c3cfc, #7e34d9);
+  background-image: linear-gradient(to bottom, #3c3cfc, #7e34d9);
+  text-decoration: none;
+}

@@ -7,13 +7,26 @@ var diceImages = [
     "images/dice6.png"   // Image for d1 = 6
 ];
 
-var d1 = document.getElementById("diceA").innerHTML = Math.floor((Math.random()*6)+1);
-var d2 = document.getElementById("diceB").innerHTML = Math.floor((Math.random()*6)+1);
+function rollDice() {
+    document.getElementById("SuperwinImage2").style.display = "none";
+    document.getElementById("batwinImage").style.display = "none";
+    document.getElementById("batwinImage2").style.display = "none";
+    document.getElementById("SuperwinImage").style.display = "none";
+    document.getElementById("movingImage").style.display = "none";
+    document.getElementById("movingImage2").style.display = "none";
 
-document.querySelector(".img1").src = diceImages[d1-1];
-document.querySelector(".img2").src = diceImages[d2-1];
+    var d1 = document.getElementById("diceA").innerHTML = Math.floor((Math.random() * 6) + 1);
+    var d2 = document.getElementById("diceB").innerHTML = Math.floor((Math.random() * 6) + 1);
 
-function winner(){
+    document.querySelector(".img1").src = diceImages[d1 - 1];
+    document.querySelector(".img2").src = diceImages[d2 - 1];
+
+    var result = winner(d1, d2);
+    document.getElementById("result").innerHTML = result;
+}
+
+
+function winner(d1,d2){
 if(d1>d2){
     document.getElementById("SuperwinImage2").src = "images/supermansad.gif"; // Set the image source
     document.getElementById("SuperwinImage2").style.display = "block";
@@ -33,7 +46,9 @@ document.getElementById("movingImage").src = "images/rematch.gif"; // Set the im
 document.getElementById("movingImage").style.display = "block";
 document.getElementById("movingImage2").src = "images/rematch.gif"; // Set the image source
 document.getElementById("movingImage2").style.display = "block";
-return ("🥊Do a Re-match🥊");}
+return ("🥊Do a Re-match🥊");
+}
 
-document.getElementById("result").innerHTML = winner();
 
+var throwDice = document.getElementById("throwDiceButton");
+throwDice.addEventListener("click", rollDice);
