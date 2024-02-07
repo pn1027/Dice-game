@@ -53,4 +53,4 @@ return ("🥊Do a Re-match🥊");
 var throwDice = document.getElementById("throwDiceButton");
 throwDice.addEventListener("click", rollDice);
 
-//I have zero Idea what is this code about
+//Finally I am back to making commits
